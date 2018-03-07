@@ -1,0 +1,8 @@
+.*  
+*.md  
+*.yml
+.vscode*
+node_modoules/
+src/
+.html
+.config.js
