@@ -1,6 +1,6 @@
 {
   "name": "vue-rule-test1",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "this is a simple vue-rule-component",
   "main": "src/index.js",
   "scripts": {
