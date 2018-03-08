@@ -125,7 +125,7 @@ Object.defineProperty(exports,"__esModule",{value:true});//
 //
 //
 //
-exports.default={name:'rule',props:{speed:{type:Number,default:function _default(){return 1;}},pointWidth:{type:String,default:function _default(){return 28*window.innerWidth/750+'px';}},pointHeight:{type:String,default:function _default(){return 20*window.innerWidth/750+'px';}},pointBottom:{type:String,default:function _default(){return 15*window.innerWidth/750+'px';}},ruleHeight:{type:String,default:function _default(){return 72*window.innerWidth/750+'px';}}},data:function data(){return{point_icon:__webpack_require__(4),img_width:0,//图片宽
+exports.default={name:'rule',props:{speed:{type:Number,default:function _default(){return 1;}},pointWidth:{type:String,default:function _default(){return 28*window.innerWidth/750+'px';}},pointHeight:{type:String,default:function _default(){return 20*window.innerWidth/750+'px';}},pointBottom:{type:String,default:function _default(){return 15*window.innerWidth/750+'px';}},ruleHeight:{type:String,default:function _default(){return 72*window.innerWidth/750+'px';}}},data:function data(){return{point_icon:__webpack_require__(3),img_width:0,//图片宽
 client_width:0,//屏幕宽
 current_x:0,//初始X轴坐标
 start_x:0,//开始的X轴坐标
@@ -152,13 +152,6 @@ var weight=-(x/per_scale-start_weight);this.$emit('update',weight);}}};
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports,"__esModule",{value:true});var _rule=__webpack_require__(2);var _rule2=_interopRequireDefault(_rule);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=_rule2.default;// export { rule }
-
-/***/ }),
-/* 2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -166,12 +159,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_14_1_1_vue_loader_lib_selector_type_script_index_0_rule_vue__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_14_1_1_vue_loader_lib_selector_type_script_index_0_rule_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_14_1_1_vue_loader_lib_selector_type_script_index_0_rule_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_14_1_1_vue_loader_lib_selector_type_script_index_0_rule_vue__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_14_1_1_vue_loader_lib_selector_type_script_index_0_rule_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_14_1_1_vue_loader_lib_template_compiler_index_id_data_v_7a2a3d82_hasScoped_true_buble_transforms_node_modules_vue_loader_14_1_1_vue_loader_lib_selector_type_template_index_0_rule_vue__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_14_1_1_vue_loader_lib_runtime_component_normalizer__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_14_1_1_vue_loader_lib_template_compiler_index_id_data_v_7a2a3d82_hasScoped_true_buble_transforms_node_modules_vue_loader_14_1_1_vue_loader_lib_selector_type_template_index_0_rule_vue__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_14_1_1_vue_loader_lib_runtime_component_normalizer__ = __webpack_require__(5);
 var disposed = false
 function injectStyle (context) {
   if (disposed) return
-  __webpack_require__(3)
+  __webpack_require__(2)
 }
 /* script */
 
@@ -218,19 +211,19 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 3 */
+/* 2 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 4 */
+/* 3 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAUCAYAAAELhXYWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA39pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1ZTYzZDhjMS0zYWIwLTBlNGEtOGI2NC1hMjYyZDQ2OGY3NDAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODYzNTAxQTdERkI1MTFFNzkyMjA5RDEzQzgyQjRFNTUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODYzNTAxQTZERkI1MTFFNzkyMjA5RDEzQzgyQjRFNTUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjcxNzkwMzFjLTEwMDAtNGQ0Ny04NDc5LTFjMTFhNjJkZGExMiIgc3RSZWY6ZG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjdmNzk2NjY1LWRmYjAtMTFlNy05ZjRjLWU0ZWNlNmMzY2YzNyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgVxe6QAAAG0SURBVHjaYvyf4MUABO+AWBCI45kYIEAQSi+ECcAAI0AAMQK1bAMyPIH4MROUAQKyIA4jlCMGEEAgZfeADEUGLACkUgmIX2GRYwQIIJDOYCCjF4hlgJgZiN8D8WkgdmcBEmvQdIDc6gbE15kYcANNZNchgwcwB4H9gCYJdj1AAIEcdB1IazCQBm6BTE1gIB0EgzSeBGIDEjSpAvEVFijnItSz/wloYkSOEXQJfjQxkGHc6KEIEECgwOEE0l1A7ADE0mgJCAQ+QDU/B+LDQFwO0vSf1FBhIiMkydL0nwmaoEgBViBNu4H4H5EafgLxCZjzRInUJIzsJ1CmnUdAQx8Qf0UPiGQgfohDw00gLsYVegpAvBxNbC56zgAIMFDk2gLpJUAsx0A7ACoTQkEJ/gC5iYMEAErOO0CWzGagD5gCsiwDiA/R2KItQFwICz57IN5LI4vWAbEveqpyoUGQdoOKUFxJOA2Iw6lgCaj48gDiMkKlzSpoqXmGTIsOAjEHEO8ktmj7BsSmQCwPxDeItOQCEEtAS/Bf5JSjj0BVLLRusINm/mdQucdAPB+IzaHyhkD8Ep9hAOEeTl9z5mP+AAAAAElFTkSuQmCC"
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -273,7 +266,7 @@ if (false) {
 }
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

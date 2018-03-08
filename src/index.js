@@ -1,5 +1,5 @@
 
-import rule from './rule.vue'
+import rule from '../dist/index.js'
 
 export default rule
 
