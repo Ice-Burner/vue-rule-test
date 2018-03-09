@@ -1,5 +1,5 @@
 
-import rule from '../dist/index.js'
+import rule from './dist/index.js'
 
 export default rule
 
