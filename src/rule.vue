@@ -3,38 +3,46 @@
  * @Author: ljb
  * @Date: 2017-12-25 14:29:44
  * @Last Modified by: ljb
- * @Last Modified time: 2018-03-06 16:28:47
+ * @Last Modified time: 2018-03-08 17:55:45
  */
 <style lang="less" rel="stylesheet/less" type="text/less" scoped>
+/*手机设备宽*/
 
-	/*手机设备宽*/
-	@device-pixel: 750;  /*px*/
-	@flexiable-js-device-width: 10rem; /*rem*/
-	@rem-per-px: @flexiable-js-device-width / @device-pixel ;     /*每px等于的1/75rem*/
+@device-pixel: 750;
 
-	.v-compoent-rule {
-		.rule-point {
-			// width: 28*@rem-per-px;
-			// height: 20*@rem-per-px;
-			margin: 0 auto 15px;
-			img {
-				width: 100%;
-				height: 100%;
-			}
-		}
-		.rule-content {
+/*px*/
+
+@flexiable-js-device-width: 10rem;
+
+/*rem*/
+
+@rem-per-px: @flexiable-js-device-width / @device-pixel ;
+
+/*每px等于的1/75rem*/
+
+.v-compoent-rule {
+	.rule-point {
+		// width: 28*@rem-per-px;
+		// height: 20*@rem-per-px;
+		margin: 0 auto 15px;
+		img {
 			width: 100%;
-			// height: 72*@rem-per-px;
-			background-image: url('~src/assets/img/ruler_weight_img.png');
-			background-repeat: no-repeat;
-			background-size: cover;
-			box-shadow: 0 -5px 10px rgba(255, 96, 74, 0.35); //用于提交或添加的按钮和需要强调的字体
-			;
+			height: 100%;
 		}
 	}
+	.rule-content {
+		width: 100%; // height: 72*@rem-per-px;
+		background-image: url('~src/assets/img/ruler_weight_img.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		box-shadow: 0 -5px 10px rgba(255, 96, 74, 0.35); //用于提交或添加的按钮和需要强调的字体
+		;
+	}
+}
 </style>
+
 <template>
-<div id="v-compoent-rule">
+<div>
 
 	<div class="rule-point" :style="{'width': pointWidth,'height': pointHeight,'marginBottom':pointBottom}">
 		<img :src="point_icon" alt="">
@@ -54,31 +62,31 @@ export default {
 			default () {
 				return 1;
 			}
-    },
-    pointWidth: {
-      type: String,
-      default () {
-				return 28*window.innerWidth / 750 + 'px';
+		},
+		pointWidth: {
+			type: String,
+			default () {
+				return 28 * window.innerWidth / 750 + 'px';
 			}
-    },
-    pointHeight: {
-      type: String,
-      default () {
-				return 20*window.innerWidth / 750 + 'px';
+		},
+		pointHeight: {
+			type: String,
+			default () {
+				return 20 * window.innerWidth / 750 + 'px';
 			}
-    },
-    pointBottom: {
-      type: String,
-      default () {
-				return 15*window.innerWidth / 750 + 'px';
+		},
+		pointBottom: {
+			type: String,
+			default () {
+				return 15 * window.innerWidth / 750 + 'px';
 			}
-    },
-    ruleHeight: {
-      type: String,
-      default () {
-				return 72*window.innerWidth / 750 + 'px';
+		},
+		ruleHeight: {
+			type: String,
+			default () {
+				return 72 * window.innerWidth / 750 + 'px';
 			}
-    }
+		}
 	},
 	data: function() {
 		return {

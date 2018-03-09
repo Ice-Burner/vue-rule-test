@@ -8,6 +8,7 @@ module.exports = {
 	output: {
 		filename: 'index.js',
         path: path.resolve(__dirname, './dist'),
+        publicPath: path.resolve(__dirname, './dist'),
         library: 'vueRule',
         libraryTarget: 'umd'
 	},
@@ -59,7 +60,7 @@ module.exports = {
                 test: /\.(png|jpg|gif|ttf|svg|woff|eot)$/,
                 loader: 'url-loader',
                 query: {
-                    limit: 30000,
+                    limit: 1024,
                     name: '[name].[ext]?[hash]'
                 }
             }
