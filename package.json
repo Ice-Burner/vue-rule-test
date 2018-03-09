@@ -10,6 +10,10 @@
   "keywords": [
     "vue-rule"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ice-Burner/vue-rule-test"
+  },
   "private": false,
   "author": "burner",
   "license": "ISC",
