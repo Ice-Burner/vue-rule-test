@@ -3,7 +3,7 @@
  * @Author: ljb
  * @Date: 2017-12-25 14:29:44
  * @Last Modified by: ljb
- * @Last Modified time: 2018-03-08 17:55:45
+ * @Last Modified time: 2018-03-09 11:05:42
  */
 <style lang="less" rel="stylesheet/less" type="text/less" scoped>
 /*手机设备宽*/
@@ -42,7 +42,7 @@
 </style>
 
 <template>
-<div>
+<div class="v-compoent-rule">
 
 	<div class="rule-point" :style="{'width': pointWidth,'height': pointHeight,'marginBottom':pointBottom}">
 		<img :src="point_icon" alt="">
