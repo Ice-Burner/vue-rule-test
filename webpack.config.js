@@ -19,31 +19,33 @@ module.exports = {
                 loader: 'vue-loader',
                 options: {
                     loaders: {
-                        less: ExtractTextPlugin.extract({
-                            use: ['css-loader?minimize', 'postcss-loader', 'less-loader'],
-                            fallback: 'vue-style-loader'
-                        }),
-                        css: ExtractTextPlugin.extract({
-                            use: ['css-loader', 'postcss-loader'],
-                            fallback: 'vue-style-loader'
-                        }),
+                        // less: ExtractTextPlugin.extract({
+                        //     use: ['css-loader?minimize', 'postcss-loader', 'less-loader'],
+                        //     fallback: 'vue-style-loader'
+                        // }),
+                        // css: ExtractTextPlugin.extract({
+                        //     use: ['css-loader', 'postcss-loader'],
+                        //     fallback: 'vue-style-loader'
+                        // }),
                     }
                 }
 			},
 			{
                 test: /\.css$/,
-                use: ExtractTextPlugin.extract({
-                    use: ['css-loader?minimize', 'postcss-loader'],
-                    fallback: 'style-loader'
-                })
+                loader: 'css-loader!style-loader',
+                // use: ExtractTextPlugin.extract({
+                //     use: ['css-loader?minimize', 'postcss-loader'],
+                //     fallback: 'style-loader'
+                // })
             },
 
             {
                 test: /\.less/,
-                use: ExtractTextPlugin.extract({
-                    use: ['postcss-loader', 'less-loader'],
-                    fallback: 'style-loader'
-                })
+                loader: 'less-loader!css-loader!style-loader',
+                // use: ExtractTextPlugin.extract({
+                //     use: ['postcss-loader', 'less-loader'],
+                //     fallback: 'style-loader'
+                // })
             },
 			{
                 test: /\.js$/,
@@ -74,7 +76,7 @@ module.exports = {
 		}),
 		new ExtractTextPlugin({
             filename: path.join('css/[name].[hash].css'),
-            publicPath: __dirname + 'css',
+            publicPath: __dirname,
             allChunks: true
         }),
         // new HtmlWebpackPlugin({
@@ -85,7 +87,7 @@ module.exports = {
 	resolve: {
 		extensions: ['.json', '.js', '.vue'],
 		alias: {
-            'vue': 'vue/dist/vue.esm.js',
+            // 'vue': 'vue/dist/vue.esm.js',
             'src': path.resolve(__dirname, './src'),
         }
 	},
